@@ -1,5 +1,5 @@
 package com.example.sudogu.controller;
 
-public class SudoguController {
+public class PaginaInicioController {
 
 }
