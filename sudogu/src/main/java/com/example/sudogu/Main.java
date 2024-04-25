@@ -9,7 +9,6 @@ public class Main extends Application {
         launch(args);
     }
 
-    "Escenario principal"
     @Override
     public void start(Stage primaryStage) {
 

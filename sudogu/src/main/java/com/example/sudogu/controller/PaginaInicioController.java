@@ -1,5 +1,5 @@
 package com.example.sudogu.controller;
 
-public class InstructionsController {
+public class PaginaInicioController {
 
 }
