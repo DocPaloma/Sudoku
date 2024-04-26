@@ -9,8 +9,8 @@ import java.io.IOException;
 
 public class InstructionsStage extends Stage{
     public InstructionsStage() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("com/example/sudogu/instructions-view"));
-        Parent instruc = loader.load();
+        FXMLLoader inst = new FXMLLoader(getClass().getResource("com/example/sudogu/instructions-view"));
+        Parent instruc = inst.load();
         Scene instruScen = new Scene(instruc);
         setTitle("Instrucciones");
         setScene(instruScen);

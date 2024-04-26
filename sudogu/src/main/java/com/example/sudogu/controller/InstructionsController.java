@@ -1,4 +1,6 @@
 package com.example.sudogu.controller;
+import com.example.sudogu.view.InstructionsStage;
+import com.example.sudogu.view.PaginaInicioStage;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -6,17 +8,19 @@ import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.control.Button;
 
-public class InstructionsController {
-    public void setInstructionsStage(Stage instructionsStage) {
-        //this.instructionsStage = instructionsStage;
-    }
+import java.io.IOException;
 
-//    @FXML
-//    private void handleCloseButtonAction() {
-//        // Cerrar la Stage
-//        if (primaryStage != null) {
-//            primaryStage.close();
-//        }
-//    }
+public class InstructionsController {
+    @FXML
+    private ImageView InstructionImage;
+
+    @FXML
+    private Button returnMenuButton;
+
+    @FXML
+    private void handleReturnButtonAction(ActionEvent event) throws IOException {
+        InstructionsStage.deleteInstruct();
+        PaginaInicioStage.getMenu();
+    }
 
 }

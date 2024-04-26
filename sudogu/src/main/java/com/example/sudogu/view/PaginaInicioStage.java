@@ -1,27 +1,33 @@
 package com.example.sudogu.view;
 
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+
+import java.io.IOException;
 public class PaginaInicioStage extends Stage{
-    public SudokuMainStage() throws IOException{
-        FMXLLoader loader = new FMXLLoader(getClass().getResource("com/example/sudogu/pagina-inicio.fxml"));
-        Parent root = loader.load();
-        Scene scene = new Scene(root);
-        setTitle("Sudoku");
-        setScene(scene);
+    public PaginaInicioStage() throws IOException{
+        FXMLLoader mainme = new FXMLLoader(getClass().getResource("com/example/sudogu/pagina-inicio.fxml"));
+        Parent menu = mainme.load();
+        Scene menuScene = new Scene(menu);
+        setTitle("Sudogu");
+        setScene(menuScene);
         setResizable(false);
         show();
     };
 
-    public static void borrarInstancia(){
-        SudokuMainStageHolder.INSTANCE.close();
-        SudokuMainStageHolder.INSTANCE = null;
+    public static void borrarMain(){
+        PaginaInicioHolder.INSTANCE.close();
+        PaginaInicioHolder.INSTANCE = null;
     }
 
-    public static SudokuMainStage getInstancia() throws IOException{
-        return SudokuMainStageHolder.INSTANCE = new SudokuMainStage();
+    public static PaginaInicioStage getMenu() throws IOException{
+        return PaginaInicioHolder.INSTANCE = new PaginaInicioStage();
     }
 
-    private static class SudokuMainStageHolder{
-        private static SudokuMainStage INSTANCE;
+    private static class PaginaInicioHolder{
+        private static PaginaInicioStage INSTANCE;
     }
 
 }
