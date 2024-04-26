@@ -11,8 +11,7 @@ import javafx.scene.control.Button;
 import java.io.IOException;
 
 public class InstructionsController {
-    @FXML
-    private ImageView InstructionImage;
+
 
     @FXML
     private Button returnMenuButton;
