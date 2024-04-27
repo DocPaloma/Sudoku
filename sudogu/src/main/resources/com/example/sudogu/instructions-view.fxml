@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TextArea layoutX="67.0" layoutY="56.0" prefHeight="247.0" prefWidth="290.0" text="Sudoku se juega en una cuadrícula de 9 x 9 espacios. Dentro de las filas y columnas hay 9 &quot;cuadrados&quot; (compuestos de 3 x 3 espacios). Cada fila, columna y cuadrado (9 espacios cada uno) debe completarse con los números del 1 al 9, sin repetir ningún número dentro de la fila, columna o cuadrado" wrapText="true">
@@ -15,6 +14,6 @@
          </font>
       </TextArea>
       <ImageView fx:id="InstructionImage" fitHeight="150.0" fitWidth="200.0" layoutX="372.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
-      <Button fx:id="returnMenuButt" layoutX="446.0" layoutY="331.0" mnemonicParsing="false" onAction="#onHandleButtonAction" text="Volver al menú" />
+      <Button fx:id="returnMenuButton" layoutX="446.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleReturnButtonAction" text="Volver al menú" />
    </children>
 </AnchorPane>
